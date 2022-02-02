@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Consumo (álcool/gasolina)</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Álcool ou Gasolina?</h1>
+        <p class="instrucao">Preencha as informações sobre o seu carro e <br>descubra quantos km ele faz por litro de combustível.</p>
+
+        <label for="volumeLitrosTanque" class="label-volumeL">Volume total do tanque <span>(em litros)</span>: </label>
+        <input type="number" id="volumeLitrosTanque" required> <br>
+
+        <p>Quantos 'km' ele percorre com o tanque cheio?</p>
+        <label for="kmTanqueGasolina">de gasolina: </label>
+        <input type="number" id="kmTanqueGasolina" required> <br>
+        <label for="kmTanqueAlcool">de álcool: </label>
+        <input type="number" id="kmTanqueAlcool" required> <br>
+        <input type="button" value="Calcular" class="button" onclick="calcularConsumo()">
+        <div id="resultado"></div>
+        <footer><a href="https://github.com/loaalobo" title="Link GituHub" class="footer-contato" target="_blank">&copy;Lorena Lobo</a></footer>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
