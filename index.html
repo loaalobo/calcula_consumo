@@ -13,16 +13,18 @@
         <h1>Álcool ou Gasolina?</h1>
         <p class="instrucao">Preencha as informações sobre o seu carro e <br>descubra quantos km ele faz por litro de combustível.</p>
 
-        <label for="volumeLitrosTanque" class="label-volumeL">Volume total do tanque <span>(em litros)</span>: </label>
-        <input type="number" id="volumeLitrosTanque" required> <br>
+        <form>
+            <label for="volumeLitrosTanque" class="label-volumeL">Volume total do tanque <span>(em litros)</span>: </label>
+            <input type="number" id="volumeLitrosTanque" required> <br>
+            <p>Quantos 'km' ele percorre com o tanque cheio?</p>
+            <label for="kmTanqueGasolina">de gasolina: </label>
+            <input type="number" id="kmTanqueGasolina" required>
+            <label for="kmTanqueAlcool">de álcool: </label>
+            <input type="number" id="kmTanqueAlcool" required> <br>
+            <input type="button" value="Calcular" class="button" onclick="validaForm()" id="btn">
+            <div id="resultado"></div>
+        </form>
 
-        <p>Quantos 'km' ele percorre com o tanque cheio?</p>
-        <label for="kmTanqueGasolina">de gasolina: </label>
-        <input type="number" id="kmTanqueGasolina" required> <br>
-        <label for="kmTanqueAlcool">de álcool: </label>
-        <input type="number" id="kmTanqueAlcool" required> <br>
-        <input type="button" value="Calcular" class="button" onclick="calcularConsumo()">
-        <div id="resultado"></div>
         <footer><a href="https://github.com/loaalobo" title="Link GituHub" class="footer-contato" target="_blank">&copy;Lorena Lobo</a></footer>
     </div>
 
