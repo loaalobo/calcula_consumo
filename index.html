@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcula Consumo (álcool/gasolina)</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 
 </head>
@@ -21,7 +23,7 @@
             <input type="number" id="kmTanqueGasolina" required>
             <label for="kmTanqueAlcool">de álcool: </label>
             <input type="number" id="kmTanqueAlcool" required> <br>
-            <input type="button" value="Calcular" class="button" onclick="validaForm()" id="btn">
+            <input type="button" value="Calcular" class="btn btn-outline-dark" onclick="validaForm()" id="btn" style="font-family: 'VT323', monospace; font-size: 20px;">
             <div id="resultado"></div>
         </form>
 
