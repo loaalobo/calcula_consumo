@@ -1,5 +1,3 @@
-// Add condicional para só chamar a função se os inputs estiverem preenchidos
-
 function validaForm() {
     const volumeLitrosTanque = document.getElementById("volumeLitrosTanque").value;  
     const kmTanqueGasolina = document.getElementById("kmTanqueGasolina").value;
